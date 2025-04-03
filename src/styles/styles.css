@@ -150,7 +150,7 @@ input {
 .background {
   height: 100vh;
   width: 100vw;
-  background-image: url(./../images/background.gif);
+  background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
   filter: blur(7px) brightness(0.5);
   background-size: 100% 100%;
   position: absolute;
@@ -196,7 +196,7 @@ input {
   flex-direction: column;
 }
 .hero__header {
-  background-image: url(./../images/background.gif);
+  background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,6 +274,7 @@ input {
     transition-duration: var(--transition-duration);
   }
 }
+
 .links {
   display: flex;
   -moz-column-gap: var(--gap);
@@ -395,7 +396,7 @@ input {
 }
 .music__progress-wrapper {
   flex-grow: 1;
-  height: 5px;
+  height: 7px;
   background-color: var(--color-dark);
   display: flex;
   align-items: center;

@@ -16,6 +16,7 @@ import ButtonForward from './images/button-forward.tsx'
 import ButtonPause from './images/button-pause.tsx'
 import ButtonPlay from './images/button-play.tsx'
 import Progress from './components/progress.tsx'
+import TikTok from './images/ticTok.tsx'
 
 import { useState , useRef} from 'react'
 
@@ -125,12 +126,12 @@ function App() {
                 </div>
               </div>
               <ul className="hero__links">
-                <a href="https://www.youtube.com/@skwwq52">
+                <a href="https://www.tiktok.com/@skwwq52?_t=ZM-8uxcbP0XPIj&_r=1">
                   <li className="hero__link link-image">
-                    <YoutubeLogo/>
+                    <TikTok/>
                   </li>
                 </a>
-                <a href="">
+                <a href="https://steamcommunity.com/profiles/76561199477059396/">
                   <li className="hero__link link-image">
                     <SteamLogo/>
                   </li>
@@ -140,7 +141,7 @@ function App() {
                     <TelegramLogo/>
                   </li>
                 </a>
-                <a href="">
+                <a href="https://discord.gg/U3xzqKpHvS">
                   <li className="hero__link link-image">
                     <DiscordLogo/>
                   </li>
@@ -150,7 +151,7 @@ function App() {
           </section>
           <section className="links">
             <div className="links__item">
-              <a href="">
+              <a href="https://www.youtube.com/@skwwq52">
                 <div className="links__image link-image">
                   <YoutubeLogo/>
                 </div>
@@ -163,7 +164,7 @@ function App() {
               </a>
             </div>
             <div className="links__item">
-              <a href="">
+              <a href="https://t.me/sswkqq">
                 <div className="links__image link-image">
                   <TelegramLogo/>
                 </div>

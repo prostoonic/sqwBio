@@ -6,13 +6,12 @@
     width: 100%;
     flex-direction: column;
     row-gap: var(--gap);
-
 }
 
 .background {
     height: 100vh;
     width: 100vw;
-    background-image: url(./../images/background.gif);
+    background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
     filter: blur(7px) brightness(0.5);
     background-size: 100% 100%;
     position: absolute;
@@ -25,10 +24,6 @@
     padding: 8px;
 }
 
-// .link-image:hover {
-//     fill: var(--color-light-purple);
-//     transition-duration: var(--transition-duration);
-// }
 .text-typer {
     height: 20px;
     
@@ -48,13 +43,11 @@
 
 
 .hero {
-    // max-width: var(--block-width);
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: var(--color-dark-purple);
     border-radius: var(--border-radius);
-    // row-gap: var(--gap);
     color: var(--color-light);
 
     &__body {
@@ -67,7 +60,8 @@
 
     }
     &__header{
-        background-image: url(./../images/background.gif);
+        background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
+
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -127,11 +121,6 @@
         font-size: 15px;
     }
 
-    // &__text-wrapper {
-    //     display: flex;
-    //     column-gap: 1px;
-    // }
-
     &__links {
         display: flex;
         justify-content: center;
@@ -151,10 +140,6 @@
             fill: var(--color-light-purple);
             transition-duration: var(--transition-duration);
         }
-    }
-
-    &__link:hover {
-        
     }
 }
 
@@ -187,15 +172,6 @@
             
         }
         }
-        
-
-    a:hover *{
-        
-    }
-
-    a:hover  &__arrow{
-        // transform: translate(5px);
-    }
 
     &__item:hover {
         background-color: rgba(48, 38, 84, 0.9);
@@ -259,29 +235,6 @@
         }
     }
 
-    &__button:hover {
-    }
-    
-    // &__volume {
-    //     display: flex;
-    //     stroke: var(--color-light);
-    //     transition: var(--transition)
-    // }
-
-    // &__volume:hover {
-    //     stroke: var(--color-light-purple);
-        
-    // }
-
-    // &__volume-image {
-    //     transition: var(--transition)
-
-    // }
-
-    // &__volume-image:hover {
-    //     stroke: var(--color-light-purple);
-    // }
-
     &__name {
         color: var(--color-light);
         font-family: var(--font-family-base);
@@ -309,9 +262,8 @@
     }
 
     &__progress-wrapper {
-        // width: 400px;
         flex-grow: 1;
-        height: 5px;
+        height: 7px;
         background-color: var(--color-dark);
         display: flex;
         align-items: center;

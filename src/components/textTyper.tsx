@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function TextAnimator() {
-    const text = "lorem ipsum dolor"
+    const text = "Пойду покурю"
     const [displayText, setDisplayText] = useState("");
     const [index, setIndex] = useState(0);
     const [removing, setRemoving] = useState(false);
