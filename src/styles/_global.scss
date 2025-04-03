@@ -1,0 +1,22 @@
+#root {
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+// p,h1,h2 {
+//     font-family: var(--font-family-base);
+//     font-weight: bold;
+
+// }
+
+.hero__greetings-header {
+    font-size: 30px;
+}
