@@ -11,7 +11,7 @@
 .background {
     height: 100vh;
     width: 100vw;
-    background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
+    background-image: url(https://res.cloudinary.com/dhzszaszs/video/upload/v1744220922/jraccfwoufqwt1ihugff.mp4);
     filter: blur(7px) brightness(0.5);
     background-size: 100% 100%;
     position: absolute;
@@ -60,7 +60,7 @@
 
     }
     &__header{
-        background-image: url(//s2.ezgif.com/tmp/ezgif-2931fab9dea40.gif);
+        background-image: url(https://res.cloudinary.com/dhzszaszs/video/upload/v1744220922/jraccfwoufqwt1ihugff.mp4);
 
         background-repeat: no-repeat;
         background-position: center;
@@ -145,7 +145,6 @@
 
 .links {
     display: flex;
-    // max-width: var(--block-width);
     column-gap: var(--gap);
     flex-wrap: wrap;
 

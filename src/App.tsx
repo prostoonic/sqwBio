@@ -75,7 +75,7 @@ function App() {
   }
 
   function toggleForward(){
-    if(musicPlayer.musicId !== musicArr.length){
+    if(musicPlayer.musicId + 1 !== musicArr.length){
       setMusicPlayer({...musicPlayer,  musicId:musicPlayer.musicId+1});
       console.log(musicPlayer.musicId)
     }
