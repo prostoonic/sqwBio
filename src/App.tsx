@@ -17,7 +17,7 @@ import ButtonPause from './images/button-pause.tsx'
 import ButtonPlay from './images/button-play.tsx'
 import Progress from './components/progress.tsx'
 import TikTok from './images/ticTok.tsx'
-
+import Background  from './images/background.tsx'
 import { useState , useRef} from 'react'
 
 import musicArr from '../public/music/data.ts'
@@ -136,11 +136,11 @@ function App() {
                     <SteamLogo/>
                   </li>
                 </a>
-                <a href="">
+                {/* <a href="">
                   <li className="hero__link link-image">
                     <TelegramLogo/>
                   </li>
-                </a>
+                </a> */}
                 <a href="https://discord.gg/U3xzqKpHvS">
                   <li className="hero__link link-image">
                     <DiscordLogo/>
@@ -156,7 +156,7 @@ function App() {
                   <YoutubeLogo/>
                 </div>
                 <div className="links__wrapper">
-                  <p className="links__text"> youtube</p>
+                  <p className="links__text"> Youtube</p>
                   <div className="links__arrow">
                     <Arrow/>
                   </div>
@@ -169,7 +169,7 @@ function App() {
                   <TelegramLogo/>
                 </div>
                 <div className="links__wrapper">
-                  <p className="links__text"> youtube</p>
+                  <p className="links__text"> Telegram</p>
                   <div className="links__arrow">
                     <Arrow/>
                   </div>
@@ -235,6 +235,7 @@ function App() {
         </div>
         
       </main>
+      <Background/>
 
       <div className="secret" >
         <p>CREATED BY PROSTO ONIC</p>
