@@ -21,7 +21,6 @@ import { useState , useRef} from 'react'
 
 import musicArr from '../public/music/data.ts'
 
-
 function App() {
   const [musicPlayer, setMusicPlayer] = useState({
     currentTimeStr:"0.00",
@@ -37,6 +36,15 @@ function App() {
 
   function chVolume(){
     setMusicPlayer((prev) => ({ ...prev, isVolumeOn: !prev.isVolumeOn }));
+    if(musicPlayer.isVolumeOn){
+      if(audio){
+        audio.volume = 0;
+      }
+    }else{
+      if(audio){
+        audio.volume = 1;
+      }
+    }
   }
 
   function togglePlayPause(){
@@ -69,14 +77,12 @@ function App() {
   function toggleBack(){
     if(musicPlayer.musicId !== 0){
       setMusicPlayer({...musicPlayer,  musicId:musicPlayer.musicId-1});
-      console.log(musicPlayer.musicId)
     }
   }
 
   function toggleForward(){
     if(musicPlayer.musicId + 1 !== musicArr.length){
       setMusicPlayer({...musicPlayer,  musicId:musicPlayer.musicId+1});
-      console.log(musicPlayer.musicId)
     }
   }
 
@@ -90,9 +96,6 @@ function App() {
     }
     
   }
-
-
-
 
   return (
     <>
