@@ -17,7 +17,6 @@ import ButtonPause from './images/button-pause.tsx'
 import ButtonPlay from './images/button-play.tsx'
 import Progress from './components/progress.tsx'
 import TikTok from './images/ticTok.tsx'
-import Background  from './images/background.tsx'
 import { useState , useRef} from 'react'
 
 import musicArr from '../public/music/data.ts'
@@ -200,7 +199,7 @@ function App() {
                   {/* <div className="music__progress-indicator" style={{left: `${musicPlayer.progressProcent}%`}}>
                   </div> */}
                {/*} </div> */}
-               <Progress setCurrentProgress={setProgress} audio={audio}/>
+                <Progress setCurrentProgress={setProgress} audio={audio} isPlaying={musicPlayer.isPlaying}/>
                 <div className="music__total-time">
                   {musicArr[musicPlayer.musicId].duration}
                 </div>
@@ -235,8 +234,6 @@ function App() {
         </div>
         
       </main>
-      <Background/>
-
       <div className="secret" >
         <p>CREATED BY PROSTO ONIC</p>
       </div>

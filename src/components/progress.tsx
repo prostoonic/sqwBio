@@ -4,11 +4,12 @@ import React, { useState, useRef } from "react";
 
 interface IProps {
   setCurrentProgress: (currentProgress: number) => void;
-  audio: HTMLAudioElement | null
+  audio: HTMLAudioElement | null;
+  isPlaying:boolean;
 
 }
 
-const DraggableProgressBar: React.FC<IProps> = ({ setCurrentProgress , audio }) => {
+const DraggableProgressBar: React.FC<IProps> = ({ setCurrentProgress , audio , isPlaying}) => {
   console.log('audio',audio)
   const [progress, setProgress] = useState(0); // Начальное значение 50%
   const progressBarRef = useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ const DraggableProgressBar: React.FC<IProps> = ({ setCurrentProgress , audio }) 
     const handleMouseUp = () => {
       document.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseup", handleMouseUp);
-      if(audio){
+      if(audio && isPlaying){
         audio.play();
       }
     };
