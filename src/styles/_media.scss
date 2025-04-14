@@ -35,3 +35,12 @@
     }
 
 }
+
+@media(max-height:700px){
+    .container{
+        padding-top: 15px;
+    }
+    :root{
+        --gap:5px;
+    }
+}
