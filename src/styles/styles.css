@@ -207,7 +207,6 @@ input {
 .hero__header {
   background-image: url(//i.imgur.com/e9Z8J7d.gifbn);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   width: 100%;
   display: flex;
